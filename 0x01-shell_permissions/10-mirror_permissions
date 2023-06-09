@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod +x "$(stat -c %a hello)" hello
