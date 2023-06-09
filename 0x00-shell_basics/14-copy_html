@@ -1,4 +1,2 @@
 #!/bin/bash
-for file in *.html; do
-  cp -nv "$file" ../
-done
+for file in *.html; do cp -nv "$file" ../; done <<< $'\n'
