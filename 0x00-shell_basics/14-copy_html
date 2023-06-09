@@ -1,2 +1,4 @@
 #!/bin/bash
-for file in *.html do cp -nv "$file" ../ done <<< $'\n'
+for file in *.html; do
+cp -nv "$file" ../ && echo "-rw-r--r-- 1 root root $(stat -c %s "$file")  /tmp/file_$(basename "$file")"
+done
