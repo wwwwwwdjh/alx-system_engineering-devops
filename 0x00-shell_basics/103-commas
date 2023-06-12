@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | awk 'BEGIN{ORS=","} {if ($1 !~ /^[.]{1,2}$/) {print $0}}' | sed 's/,$/\n/'
+ls -ap | awk 'BEGIN{ORS=", "} {if ($1 !~ /^[.]{1,2}$/) {print $0}}' | sed 's/, $/\n/'
