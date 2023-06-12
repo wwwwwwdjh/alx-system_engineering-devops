@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -empty -o -type f -size 0 | sed -n l
+find . -empty -printf '%P\n'
