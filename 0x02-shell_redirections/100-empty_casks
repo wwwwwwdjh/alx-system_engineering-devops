@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -empty -o -type f -empty -print0 | xargs -0 ls -1
+find . -empty | rev | cut -d '/' -f 1 | rev
