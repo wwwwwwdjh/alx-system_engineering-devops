@@ -1,0 +1,6 @@
+#!/bin/bash
+water_num=$(echo $WATER | base64 -d)
+stir_num=$(echo $STIR | base64 -d)
+total_num=$((water_num + stir_num))
+bestchol_num=$(printf "%b" "$total_num" | base64)
+echo "$bestchol_num"
